@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Titolo della pagina</title>
+  <style>
+    body {background-color: powderblue;}
+    h1 {color: red;}
+    p {color: blue;}
+  </style>
+  <!-- 
+      in alternative la formattazione di stile viene fatta con un file esterno di tipo .css, ad esempio
+      <link rel="stylesheet" href="mio_stile.css">
+  -->
+  
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <script>
+    function miaFunzione() {
+      document.getElementById("demo").innerHTML = "Io sono scritto con JavaScript!";
+    }
+    </script>
+  <meta charset="UTF-8">
+  <meta name="description" content="esempio di uso del tag meta">
+  <meta name="keywords" content="HTML,CSS,XML,JavaScript">
+  <meta name="autore" content="Leonardo Vanni">
+</head>
+<body>
+
+<p>The content of the body element is displayed in the browser window.</p>
+<p>The content of the title element is displayed in the browser tab, in favorites and in search engine results.</p>
+<h1>This is a Heading</h1>
+<p>This is a paragraph.</p>
+<p id="demo">questo paragrafo scompare col bottone</p>
+<button type="button" onclick="miaFunzione()">Premi qui</button>
+
+</body>
+</html>

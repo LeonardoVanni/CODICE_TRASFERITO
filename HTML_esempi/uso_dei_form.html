@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+<body>
+
+<h2>HTML Forms</h2>
+
+<form action="/uso_degli_head.html">
+  Nome da scrivere:<br>
+  <input type="text" name="nome" value="suggerimento"><br>
+  <input type="submit" value="Submit">
+</form> 
+<p>If you click the "Submit" button, the form-data will be sent to a page called "/uso_degli_head.html".</p>
+<br>
+
+<h2>Radio Buttons</h2>
+<form action="/uso_degli_head.html">
+  <input type="radio" name="stato" value="off" checked> spento<br>
+  <input type="radio" name="stato" value="on"> acceso<br>
+  <input type="submit" value="invia">
+</form> 
+
+<h2>The method Attribute</h2>
+<p>This form will be submitted using the POST method:</p>
+
+<form action="/uso_degli_head.html" target="_blank" method="POST">
+  First name:<br>
+  <input type="text" name="firstname" value="Mickey">
+  <br>
+  <input type="submit" value="Submit">
+</form>
+
+<p>After you submit, notice that, unlike the GET method, the form values is NOT visible in the address bar of the new browser tab.</p>
+
+</body>
+</html>
